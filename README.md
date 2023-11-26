@@ -1,2 +1,1 @@
-# todo_list
- 
+todo list nằm ở screens/todolist/index.html
