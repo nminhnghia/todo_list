@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variable.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/d563744863.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+    <div class="list">
+        <h1>TODO LIST</h1>
+        <div class="search">
+            <input type="text" name="searchbox" id="searchbox" placeholder="Search note...">
+            <button id="searchbutton" onclick="find()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <select name="filter" id="filter">
+                <option value="all">All</option>
+                <option value="done">Done</option>
+                <option value="doing">Doing</option>
+            </select>
+        </div>
+        <div id="note">
+        </div>
+        <div class="wrap_button_add">
+            <button class="add_button"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+        </div>
+        <div class="container_modal">
+            <div class="modal">
+                <div style="width: 100%;">
+                    <h1 style="text-align: center; margin-bottom: 10px;">NEW NOTE</h1>
+                    <input type="text" class="input_add_note" id="input_add_note" placeholder="Input your note...">
+                </div>
+                <div class="wrap_action">
+                    <div class="btn_cancel">
+                        <button class="btn_cancel_action">Cancel</button>
+                    </div>
+                    <div class="btn_success">
+                        <button onclick="add_note()">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="addTodoList.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="addnote.js"></script>
+</body>
+</html>

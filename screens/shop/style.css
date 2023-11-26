@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.selector {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}

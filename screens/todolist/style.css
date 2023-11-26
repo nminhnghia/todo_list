@@ -1,0 +1,115 @@
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+#filter {
+    background-color: var(--purple);
+    color: white;
+}
+#searchbox {
+    border: 1px solid var(--purple);
+    width: 50vw;
+}
+#searchbox, #filter, #searchbutton {
+    border-radius: 10px;
+    
+    height: 40px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--purple);
+}
+
+li {
+    list-style: none;
+}
+
+.wrap_titleTodo {
+    display: flex;
+}
+.wrap_titleTodo * {
+    margin-right: 10px;
+}
+input {
+    width: 30px;
+}
+.menu_toDo_item {
+    width: 50vw;
+}
+
+.add_button {
+    width: 50px;
+    height: 50px;
+    border-radius: 900px;
+    background-color: var(--purple);
+}
+
+.wrap_button_add {
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+}
+.add_button:hover {
+ transform: scale(1.2);
+ transition: linear 0.5s;
+    box-shadow: var(--purple) 0px 5px 12px;
+}
+.modal {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #999;
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrap_action {
+
+    display: flex;
+    justify-content: space-between;
+}
+.wrap_action div {
+    width: 100%;
+    margin: 20px;
+    color: #fff;
+}
+.input_add_note {
+    width: 100%;
+}
+.wrap_action .btn_cancel button {
+    background-color: #fff;
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    font-weight: 600;
+}
+.wrap_action .btn_success button {
+    color: white;
+    font-weight: 600;
+    background-color: var(--purple);
+}
+.container_modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input {
+    border-radius: 5px;
+}
+
+#searchbutton {
+    width: 40px;
+    height: 40px;
+}
